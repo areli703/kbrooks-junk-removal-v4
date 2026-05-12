@@ -4,9 +4,9 @@
   --void:       #0B0C10;
   --void-light: #14161F;
   --void-ui:    #1A1D28;
-  --copper:     #C9955C;
-  --copper-dim:  #A67B46;
-  --copper-glow:rgba(201,149,92,0.12);
+  --copper:     #38BDF8;
+  --copper-dim:  #0EA5E9;
+  --copper-glow:rgba(56,189,248,0.12);
   --ivory:      #F5F3EF;
   --ivory-dim:  #C8C5BE;
   --ivory-mute: #8A8F9B;
@@ -155,7 +155,7 @@ p {
 .nav-inner {
   display:flex; align-items:center; justify-content:space-between;
 }
-.brand-logo-img { height:28px; width:auto; display:block; opacity:0.92; }
+.brand-logo-img { height:44px; width:auto; display:block; opacity:0.92; }
 .nav-links { display:flex; gap:36px; }
 .nav-links a {
   font-family:var(--font-heading);
