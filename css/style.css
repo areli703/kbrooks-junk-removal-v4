@@ -933,6 +933,30 @@ p {
 .reveal-d3.animated { transition-delay:0.34s; }
 .reveal-d4.animated { transition-delay:0.46s; }
 
+.hero-watermark {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%, -50%);
+  font-family:var(--font-display);
+  font-size:clamp(100px, 18vw, 260px);
+  font-weight:400;
+  color:rgba(14,165,233,0.04);
+  letter-spacing:0.05em;
+  white-space:nowrap;
+  pointer-events:none;
+  z-index:0;
+  user-select:none;
+  line-height:0.85;
+}
+
+.hero .pulse {
+  animation: dot-pulse 2s ease-in-out infinite;
+}
+@keyframes dot-pulse {
+  0%,100% { box-shadow:0 0 0 0 rgba(16,185,129,0.5); }
+  50% { box-shadow:0 0 0 4px rgba(16,185,129,0); }
+}
+
 /* =========================================
    RESPONSIVE
    ========================================= */
