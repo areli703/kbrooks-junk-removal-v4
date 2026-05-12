@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
 :root {
-  --void:       #0B0C10;
-  --void-light: #14161F;
-  --void-ui:    #1A1D28;
-  --copper:     #38BDF8;
-  --copper-dim:  #0EA5E9;
-  --copper-glow:rgba(56,189,248,0.12);
-  --ivory:      #F5F3EF;
-  --ivory-dim:  #C8C5BE;
-  --ivory-mute: #8A8F9B;
-  --border:     rgba(245,243,239,0.06);
-  --border-hover:rgba(245,243,239,0.12);
+  --void:       #F9FAFB;
+  --void-light: #FFFFFF;
+  --void-ui:    #F3F4F6;
+  --copper:     #0EA5E9;
+  --copper-dim:  #0284C7;
+  --copper-glow:rgba(14,165,233,0.12);
+  --ivory:      #111827;
+  --ivory-dim:  #374151;
+  --ivory-mute: #6B7280;
+  --border:     rgba(0,0,0,0.07);
+  --border-hover:rgba(0,0,0,0.12);
 
   --font-display:'Bebas Neue', sans-serif;
   --font-heading:'Space Grotesk', sans-serif;
@@ -141,7 +141,7 @@ p {
    ========================================= */
 .site-nav {
   position:sticky; top:0;
-  background:rgba(11,12,16,0.88);
+  background:rgba(249,250,251,0.92);
   backdrop-filter:blur(24px) saturate(1.15);
   -webkit-backdrop-filter:blur(24px);
   border-bottom:1px solid var(--border);
@@ -149,7 +149,7 @@ p {
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 .site-nav.scrolled {
-  background:rgba(11,12,16,0.96);
+  background:rgba(249,250,251,0.95);
   border-color:rgba(201,149,92,0.12);
 }
 .nav-inner {
@@ -192,7 +192,7 @@ p {
 }
 .btn::before {
   content:''; position:absolute; inset:0;
-  background:linear-gradient(135deg, rgba(201,149,92,0) 0%, rgba(201,149,92,0.15) 100%);
+  background:linear-gradient(135deg, rgba(14,165,233,0) 0%, rgba(14,165,233,0.10) 100%);
   opacity:0; transition:opacity 0.35s ease;
   pointer-events:none;
 }
@@ -214,7 +214,7 @@ p {
 .btn-ghost:hover {
   border-color:var(--copper);
   color:var(--copper);
-  background:rgba(201,149,92,0.03);
+  background:rgba(14,165,233,0.04);
 }
 .btn-lg { padding:18px 40px; font-size:0.82rem; }
 .btn-sm { padding:10px 20px; font-size:0.72rem; }
@@ -238,7 +238,7 @@ p {
 .hero-bg-accent {
   position:absolute; top:-30%; right:-10%;
   width:65vw; height:140vh;
-  background:radial-gradient(ellipse at 30% 30%, rgba(201,149,92,0.04) 0%, transparent 70%);
+  background:radial-gradient(ellipse at 30% 30%, rgba(14,165,233,0.04) 0%, transparent 70%);
   pointer-events:none;
 }
 
@@ -302,7 +302,7 @@ p {
 .trust-pill {
   display:flex; align-items:center; gap:8px;
   padding:8px 16px;
-  background:rgba(245,243,239,0.03);
+  background:rgba(0,0,0,0.03);
   border:1px solid var(--border);
   border-radius:var(--radius);
   font-size:0.76rem;
@@ -384,7 +384,7 @@ p {
   transition:background 0.3s ease;
 }
 .quick-bar-link:last-child { border-right:none; }
-.quick-bar-link:hover { background:var(--copper-glow); }
+.quick-bar-link:hover { background:rgba(14,165,233,0.06); }
 .quick-bar-link .icon {
   width:44px; height:44px;
   display:flex; align-items:center; justify-content:center;
@@ -688,7 +688,7 @@ p {
 }
 .review-avatar {
   width:42px; height:42px; border-radius:var(--radius);
-  background:var(--copper-glow);
+  background:rgba(14,165,233,0.06);
   border:1px solid rgba(201,149,92,0.2);
   display:flex; align-items:center; justify-content:center;
   font-family:var(--font-heading);
@@ -728,7 +728,7 @@ p {
   transition:all 0.25s ease;
 }
 .city-pill:hover {
-  background:var(--copper-glow);
+  background:rgba(14,165,233,0.06);
   border-color:rgba(201,149,92,0.2);
   color:var(--copper);
 }
@@ -810,7 +810,7 @@ p {
 }
 .footer-social a:hover {
   border-color:rgba(201,149,92,0.25);
-  color:var(--copper); background:var(--copper-glow);
+  color:var(--copper); background:rgba(14,165,233,0.06);
 }
 
 /* =========================================
@@ -819,7 +819,7 @@ p {
 .sticky-cta {
   display:none;
   position:fixed; bottom:0; left:0; right:0;
-  background:rgba(11,12,16,0.95);
+  background:rgba(0,0,0,0.40);
   backdrop-filter:blur(20px);
   border-top:1px solid var(--border);
   padding:12px 16px;
@@ -831,7 +831,7 @@ p {
 }
 .btn-phone {
   flex:1; text-align:center; padding:12px;
-  background:rgba(245,243,239,0.03);
+  background:rgba(0,0,0,0.03);
   border:1px solid var(--border);
   border-radius:var(--radius-sm);
   font-family:var(--font-heading);
