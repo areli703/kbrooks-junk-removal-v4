@@ -74,7 +74,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-family:var(--font-display);
-  font-size:clamp(64px, 10vw, 136px);
+  font-size:clamp(48px, 8vw, 96px);
   line-height:0.9;
   letter-spacing:0.01em;
 }
@@ -155,7 +155,7 @@ p {
 .nav-inner {
   display:flex; align-items:center; justify-content:space-between;
 }
-.brand-logo-img { height:44px; width:auto; display:block; opacity:0.92; }
+.brand-logo-img { height:56px; width:auto; display:block; opacity:0.92; }
 .nav-links { display:flex; gap:36px; }
 .nav-links a {
   font-family:var(--font-heading);
